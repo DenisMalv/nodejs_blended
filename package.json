@@ -1,0 +1,31 @@
+{
+  "name": "node.js-blended-lessons",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js den=pizza jeyn=eggs",
+    "dev": "cross-env NODE_ENV=development nodemon app.js den=pizza jeyn=eggs",
+    "sum": "nodemon calc.js sum 2 3 4",
+    "sub": "nodemon calc.js sub 100 50 20",
+    "div": "nodemon calc.js div 10 5 2",
+    "mult": "nodemon calc.js mult 3 3 3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenisMalv/nodejs_blended.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenisMalv/nodejs_blended/issues"
+  },
+  "homepage": "https://github.com/DenisMalv/nodejs_blended#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {},
+  "description": ""
+}
