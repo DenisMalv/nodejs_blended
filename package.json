@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node app.js den=pizza jeyn=eggs",
-    "dev": "cross-env NODE_ENV=development nodemon app.js den=pizza jeyn=eggs",
-    "sum": "nodemon calc.js sum 2 3 4",
-    "sub": "nodemon calc.js sub 100 50 20",
-    "div": "nodemon calc.js div 10 5 2",
-    "mult": "nodemon calc.js mult 3 3 3"
+    "start": "node backend/server.js",
+    "client": "npm start --prefix frontend",
+    "server": "nodemon backend/server.js",
+    "start/client": "",
+    "heroku": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "repository": {
     "type": "git",
@@ -22,10 +21,14 @@
   },
   "homepage": "https://github.com/DenisMalv/nodejs_blended#readme",
   "dependencies": {
+    "colors": "^1.4.0",
     "cross-env": "^7.0.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.4.2",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.16"
   },
-  "devDependencies": {},
   "description": ""
 }
